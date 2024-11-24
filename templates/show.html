@@ -1,0 +1,13 @@
+{%load static%}
+<link rel="stylesheet" href="{% static 'css/table.css' %}">
+<div class="head"><h1>To Do App saver</h1></div>
+<form method="post">
+    <div class="form">
+        {%csrf_token%}
+        {{form}}
+   
+    
+        <input type="submit" class="l3">
+    </div>
+</form>
+<div class="foot"></div>
